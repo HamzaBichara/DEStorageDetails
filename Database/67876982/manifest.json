@@ -1,0 +1,25 @@
+{
+    "CaseNumber": "67876982",
+    "TargetEntireFleet": "false",
+    "Environment": "PROD",
+    "RecoveryOption": "ContinueNonErroredOnly",
+    "PayloadRepo": 
+        { 
+            "RepoName": "DEStorageDetails", 
+            "CommitHash": "979b167248b5de8c3d7857b48102e4373b99e343" 
+        },
+    "ImplementationSteps": [
+        {
+            "StepID": "CI-56486799",
+            "Scripts": [
+                "Database/67876982/SE_DEStorageDetails.sql"
+            ],
+            "Targets": [
+                {
+                    "Stack": "51",
+                    "Database": "ET"
+                }
+            ]
+        }
+    ]
+}
